@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@latest/lib/themes/vue.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      maxLevel: 5,// 最大支持渲染的标题层级
+      subMaxLevel: 5,
+      homepage: "homepage.md",
+      coverpage: "coverpage.md",
+      loadSidebar: "sidebar.md",
+      auto2top: true,// 切换页面后是否自动跳转到页面顶部
+      
+      requestHeaders: {
+        'cache-control': 'max-age=0',
+      },
+
+      //search: 'auto',
+      // complete configuration parameters
+      search: {
+        maxAge: 60000, // Expiration time, one minute
+        paths: 'auto',
+        //placeholder: 'Type to search',
+        //noData: 'No Results!',
+        // Headline depth, 1 - 6
+        depth: 6,
+        // To avoid search index collision
+        // between multiple websites under the same domain
+        //namespace: 'website-1',
+      },
+
+      count:{
+        isExpected: false//不显示预计阅读时间
+      },
+
+    //plugins: [
+    //    EditOnGithubPlugin.create('https://github.com/username/username.github.io/tree/master/docs/')
+    //  ],
+
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+  <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/docsify.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-python.min.js"></script>
+
+  <!--
+  -->
+</body>
+
+</html>
